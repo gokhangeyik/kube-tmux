@@ -145,10 +145,10 @@ kube_tmux() {
 
   local KUBE_TMUX
 
-  # Symbol
-  if [[ "${KUBE_TMUX_SYMBOL_ENABLE}" == true ]]; then
-    KUBE_TMUX+="#[bg=blue,fg=black]$(_kube_tmux_symbol)"
-  fi
+  # # Symbol
+  # if [[ "${KUBE_TMUX_SYMBOL_ENABLE}" == true ]]; then
+  #   KUBE_TMUX+="#[bg=blue,fg=black]$(_kube_tmux_symbol)"
+  # fi
 
   # Context
   KUBE_TMUX+="#[bg=background,fg=foreground]${KUBE_TMUX_CONTEXT}"
