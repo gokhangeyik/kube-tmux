@@ -147,11 +147,11 @@ kube_tmux() {
 
   # Symbol
   if [[ "${KUBE_TMUX_SYMBOL_ENABLE}" == true ]]; then
-    KUBE_TMUX+="#[bg=blue,fg=black]$(_kube_tmux_symbol)#[fg=colour${1}]"
+    KUBE_TMUX+="#[bg=blue,fg=black]$(_kube_tmux_symbol)"
   fi
 
   # Context
-  KUBE_TMUX+="#[fg=${2}]${KUBE_TMUX_CONTEXT}"
+  KUBE_TMUX+="#[bg=background,fg=foreground}]${KUBE_TMUX_CONTEXT}"
 
   # Namespace
   if [[ "${KUBE_TMUX_NS_ENABLE}" == true ]]; then
