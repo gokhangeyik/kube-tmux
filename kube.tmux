@@ -151,7 +151,7 @@ kube_tmux() {
   # fi
 
   # Context
-  KUBE_TMUX+="sadf#[bg=black,fg=foreground]${KUBE_TMUX_CONTEXT}"
+  KUBE_TMUX+=" #[bg=black,fg=foreground]${KUBE_TMUX_CONTEXT}"
 
   # Namespace
   if [[ "${KUBE_TMUX_NS_ENABLE}" == true ]]; then
